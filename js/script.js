@@ -4,25 +4,25 @@ $(window).on('load', function(){
         $('.loading').addClass('loaded');
         $('header').addClass('show');
         $('.header-inner').addClass('anim');
-    // }, 4000);
-    }, 1000);
+    }, 4000);
+    // }, 1000);
     setTimeout(function(){
         $('.loading').hide();
         $('.header-inner').removeClass('anim');
-    // }, 8000);
-    }, 2000);
+    }, 8000);
+    // }, 2000);
     setTimeout(function(){
         $('#about > h2').addClass('inview');
-    // }, 6000);
-    }, 2000);
+    }, 6000);
+    // }, 2000);
     setTimeout(function(){
         $('.profile > div').each(function(i){
             $(this).delay(200 * i).queue(function(){
                 $(this).addClass('inview').dequeue();
             });
         });
-    // }, 6200);
-    }, 2200);
+    }, 6200);
+    // }, 2200);
 
     $('.typing').each(function(){
         var text = $(this).html();
