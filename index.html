@@ -1,90 +1,747 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Progate</title>
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ポートフォリオ | 天野大悟</title>
+    <link rel="icon" href="../images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/8478e2a806.js" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
 </head>
 <body>
-  <header>
-    <div class="container">
-      <div class="header-left">
-        <img class="logo" src="https://prog-8.com/images/html/advanced/main_logo.png">
-      </div>
-      <span class="fa fa-bars menu-icon"></span>
-      <div class="header-right">
-        <a href="#">レッスン</a>
-        <a href="#">新規登録</a>
-        <a href="#" class="login">ログイン</a>
-      </div>
+<div class="container">
+    <div class="loading">
+        <p class="typing">PORTFOLIO by DAIGO AMANO</p>
     </div>
-  </header>
-  <div class="top-wrapper">
-    <div class="container">
-      <h1>LEARN TO CODE.<br>LEARN TO BE CREATIVE.</h1>
-      <p>Progateはオンラインプログラミング学習サービスです。<br>初心者にもやさしいスライドとレッスンで、ウェブサービスを作りながらプログラミングを学んでいきましょう。</p>
-      <div class="btn-wrapper">
-        <a href="#" class="btn signup">新規登録はこちら</a>
-        <p>or</p>
-        <a href="#" class="btn facebook"><span class="fa fa-facebook"></span>Facebookで登録</a>
-        <a href="#" class="btn twitter"><span class="fa fa-twitter"></span>Twitterで登録</a>
-      </div>
-    </div>
-  </div>
-  <div class="lesson-wrapper">
-    <div class="container">
-      <div class="heading">
-        <h2>Learn Where to Get Started!</h2>
-      </div>
-      <div class="lessons">
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/html.png">
-            <p>HTML & CSS</p>
-          </div>
-          <p class="text-contents">ウェブページの作成に使用される言語です。HTMLとCSSを組み合わせることで、静的なページを作り上げることができます。</p>
+    <header>
+        <div class="header-inner">
+            <h1><a href="/"><span class="heading">PORTFOLIO</span><span class="name">by DAIGO AMANO</span></a></h1>
+            <nav class="nav">
+                <a href="#about">ABOUT</a>
+                <a href="#works">WORKS</a>
+            </nav>
         </div>
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/jQuery.png">
-            <p>jQuery</p>
-          </div>
-          <p class="text-contents">素敵な動きを手軽に実装できるJavaScriptライブラリです。 アニメーション効果をつけたり、Ajax（エイジャックス）を使って外部ファイルを読み込んだりと色々なことができます。</p>
+        <svg class="wave" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs><path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></defs>
+        <g class="waves">
+        <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255 255 255 / .5" />
+        <use xlink:href="#gentle-wave" x="48" y="1" fill="rgba(255 255 255 / .5)" />
+        <use xlink:href="#gentle-wave" x="48" y="2" fill="#fcfcfc" />
+        </g>
+        </svg>
+    </header>
+    <main>
+    <section id="about">
+        <h2><span>ABOUT</span>自己紹介</h2>
+        <div class="profile">
+            <div class="photo"><img src="images/profile.png" alt="天野の写真"></div>
+            <div>
+                <p>学生だった頃、ホームページを作る授業で初めてHTMLを書いて、それが画面に表示された時の興奮と感動は今も覚えています。入社したての頃は、｢spacer.gif｣という透明な画像で幅や高さを調整したり、ブラウザでの表示崩れを防ぐためにtableタグでレイアウトしたりと、いろいろ苦労したことも今となっては良い思い出です。</p>
+                <h2><span>TEST</span>業務要約</h2>
+                <p>メディアインデックス株式会社に入社後、インハウスデザイナーとして約19年間従事してきました。WEBサイトのデザイン、コーディングをはじめ、ロゴ制作、ランディングページやバナーの作成、携帯ゲームの企画立案から画面UI設計、キャラクターの考案、会社案内から媒体資料の作成まで幅広く携わりました。</p>
+                <p>「ナンバーワンよりもオンリーワンなサービスを」</p>
+            </div>
         </div>
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/ruby.png">
-            <p>Ruby</p>
-          </div>
-          <p class="text-contents">オープンソースの動的なプログラミング言語で、 シンプルさと高い生産性を備えています。大きなWebアプリケーションから小さな日用ツールまで、さまざまなソフトウェアを作ることができます。</p>
+        <div class="tool">
+            <div class="design">
+                <h2><span>DESIGN</span>デザイン</h2>
+                <p>WEBサイト、ランディングページ、バナーなどのデザイン制作ができます。コンセプトやユーザーに最適なデザインを目指し、余白やあしらいなど細部にまでこだわって制作します。</p>
+                <div>
+                    <img src="images/icon_photoshop.png" alt="Photoshop">
+                    <img src="images/icon_illustrator.png" alt="Illustrator">
+                    <img src="images/icon_xd.png" alt="XD">
+                </div>
+            </div>
+            <div class="coding">
+                <h2><span>CODING</span>コーディング</h2>
+                <p>HTML・CSSを用いてデザインし、規則性を持たせたわかりやすいコード、レスポンシブや各ページ・セクションの共通点を考慮した効率的なコードを心がけています。jQueryで動きを加え、視覚的魅力を向上させます。</p>
+                <div>
+                    <img src="images/icon_html.png" alt="HTML">
+                    <img src="images/icon_css.png" alt="CSS">
+                    <img src="images/icon_jquery.png" alt="Jquery">
+                    <img src="images/icon_vscode.png" alt="Visual Studio Code">
+                </div>
+            </div>
         </div>
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/php.png">
-            <p>PHP</p>
-          </div>
-          <p class="text-contents">HTMLだけではページの内容を変えることはできません。PHPはHTMLにプログラムを埋め込み、それを可能にします。</p>
+    </section>
+    <section id="works">
+        <div class="works">
+            <div class="sticky">
+                <div class="disp-scroll"></div>
+                <h2><span>WORKS</span>制作実績</h2>
+                <div class="works-wrapper">
+                    <div class="works-inner"></div>
+                    <div class="works-inner regimag">
+                        <div class="works-text">
+                            <span class="label">WEBサイト</span>
+                            <p>デジタルコンテンツの統合プラットフォーム<br><em>レジまぐ</em></p>
+                            <button id="modal_01" class="modal-open-button modal-button">
+                                <span class="circle">
+                                    <span class="icon arrow"></span>
+                                </span>
+                                <span class="button-text">READ MORE</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="works-inner lp_regimag">
+                        <div class="works-text">
+                            <span class="label">ランディングページ</span>
+                            <p>レジまぐのクラウドファンディングプラットフォーム<br><em>MEDIA（メディア）</em></p>
+                            <button id="modal_07" class="modal-open-button modal-button">
+                                <span class="circle">
+                                    <span class="icon arrow"></span>
+                                </span>
+                                <span class="button-text">READ MORE</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="works-inner prepon">
+                        <div class="works-text">
+                            <span class="label">WEBサイト</span>
+                            <p>フラッシュマーケティング型のクーポンサイト<br><em>PREPON（プレポン）</em></p>
+                            <button id="modal_02" class="modal-open-button modal-button">
+                                <span class="circle">
+                                    <span class="icon arrow"></span>
+                                </span>
+                                <span class="button-text">READ MORE</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="works-inner lp_prepon">
+                        <div class="works-text">
+                            <span class="label">ランディングページ</span>
+                            <p>厳選宿の限定プランをお得なプライスで！<br><em>テレビ東京｢厳選いい宿｣ タイアップ企画</em></p>
+                            <button id="modal_14" class="modal-open-button modal-button">
+                                <span class="circle">
+                                    <span class="icon arrow"></span>
+                                </span>
+                                <span class="button-text">READ MORE</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="works-inner tipoca">
+                        <div class="works-text">
+                            <span class="label">WEBサイト</span>
+                            <p>そのままポストに投函できる切手付き年賀はがき<br><em>tipoca（ティポカ）</em></p>
+                            <button id="modal_03" class="modal-open-button modal-button">
+                                <span class="circle">
+                                    <span class="icon arrow"></span>
+                                </span>
+                                <span class="button-text">READ MORE</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="works-inner ashiato">
+                        <div class="works-text">
+                            <span class="label">WEBサイト</span>
+                            <p>様々なブログで共通して使える足跡システム<br><em>あし＠（あしあっと）</em></p>
+                            <button id="modal_04" class="modal-open-button modal-button">
+                                <span class="circle">
+                                    <span class="icon arrow"></span>
+                                </span>
+                                <span class="button-text">READ MORE</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="works-inner kbank">
+                        <div class="works-text">
+                            <span class="label">WEBサイト</span>
+                            <p>求人情報と転職支援の2つのサービスをワンストップで提供<br><em>求人バンク</em></p>
+                            <button id="modal_05" class="modal-open-button modal-button">
+                                <span class="circle">
+                                    <span class="icon arrow"></span>
+                                </span>
+                                <span class="button-text">READ MORE</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="works-inner corporate">
+                        <div class="works-text">
+                            <span class="label">WEBサイト</span>
+                            <p>コーポレートサイトのリニューアル<br><em>メディアインデックス株式会社</em></p>
+                            <button id="modal_06" class="modal-open-button modal-button">
+                                <span class="circle">
+                                    <span class="icon arrow"></span>
+                                </span>
+                                <span class="button-text">READ MORE</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="works-inner sp_mcoin">
+                        <div class="works-text">
+                            <span class="label">スマートフォン</span>
+                            <p>コインを貯めてお小遣い稼ぎポイ活サイト<br><em>Mコイン</em></p>
+                            <button id="modal_08" class="modal-open-button modal-button">
+                                <span class="circle">
+                                    <span class="icon arrow"></span>
+                                </span>
+                                <span class="button-text">READ MORE</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="works-inner sp_game">
+                        <div class="works-text">
+                            <span class="label">スマートフォン</span>
+                            <p>スマートフォンで遊べるカジュアルゲーム<br><em>FLYING DONKEY</em> ほか</p>
+                            <button id="modal_09" class="modal-open-button modal-button">
+                                <span class="circle">
+                                    <span class="icon arrow"></span>
+                                </span>
+                                <span class="button-text">READ MORE</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="works-inner mb_prize">
+                        <div class="works-text">
+                            <span class="label">スマートフォン</span>
+                            <p>ユーザー属性を絞ってメール配信<br><em>ターゲティングメール</em></p>
+                            <button id="modal_11" class="modal-open-button modal-button">
+                                <span class="circle">
+                                    <span class="icon arrow"></span>
+                                </span>
+                                <span class="button-text">READ MORE</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="works-inner mb_game">
+                        <div class="works-text">
+                            <span class="label">フィーチャーフォン</span>
+                            <p>ソーシャルゲームプラットフォーム｢GREE｣で配信<br><em>ロストエレメント 〜選ばれし魔導師たち〜</em></p>
+                            <button id="modal_10" class="modal-open-button modal-button">
+                                <span class="circle">
+                                    <span class="icon arrow"></span>
+                                </span>
+                                <span class="button-text">READ MORE</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="works-inner banner">
+                        <div class="works-text">
+                            <span class="label">バナー</span>
+                            <p>主にレジまぐのTOP画面と競馬カテゴリで掲載<br><em>バナー制作</em></p>
+                            <button id="modal_12" class="modal-open-button modal-button">
+                                <span class="circle">
+                                    <span class="icon arrow"></span>
+                                </span>
+                                <span class="button-text">READ MORE</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="works-inner tshirt">
+                        <div class="works-text">
+                            <span class="label">趣味</span>
+                            <p>Tシャツのデザイン<br><em>Tシャツのデザイン</em></p>
+                            <button id="modal_13" class="modal-open-button modal-button">
+                                <span class="circle">
+                                    <span class="icon arrow"></span>
+                                </span>
+                                <span class="button-text">READ MORE</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="works-inner hide-sp"></div>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="clear"></div>
+        <div class="modal-wrapper modal_01">
+            <div class="modal-contents">
+                <div class="modal-inner">
+                    <div>
+                        <img src="../images/works_regimag.png" alt="サムネイル画像" class="thumb" loading="lazy">
+                    </div>
+                    <div>
+                        <span class="label">WEBサイト</span><span class="label">2006年リリース</span>
+                        <h3><span>デジタルコンテンツの統合プラットフォーム</span>レジまぐ</h3>
+                        <p><a href="https://regimag.jp/" target="_blank">https://regimag.jp/</a><i class="fa-solid fa-arrow-up-right-from-square"></i></p>
+                        <p class="text-justify">得意分野の情報やノウハウ、イラスト、写真、音楽、小説などを世の中に向けて発信できるデジタルコンテンツの統合プラットフォームです。</p>
+                        <p class="text-justify">有料メルマガ配信サイトとして2006年にサービスを開始。当時、フィーチャーフォン向けメール配信システムとクレジットカード決済を融合させたシステムは業界初。</p>
+                        <div class="text-justify point">
+                            <span><i class="fa-solid fa-check"></i>POINT</span>
+                            <p>ユーザーの年齢層も10代から高齢の方まで幅広く、どの年代の方にもわかりやすく長く利用してもらえるように改善を重ねてきました。</p>
+                        </div>
+                        <span class="label">ワイヤーフレーム</span><span class="label">デザイン</span><span class="label">コーディング</span>
+                    </div>
+                </div>
+                <div class="screenshot">
+                    <span class="heading-sideline">SCREENSHOT</span>
+                    <img src="../images/cap_regimag_top_pc.png" alt="TOP画面（PC）" class="pc" loading="lazy">
+                    <img src="../images/cap_regimag_top_sp.png" alt="TOP画面（スマホ）" class="sp" loading="lazy">
+                </div>
+                <button class="modal-close-button modal-button">
+                    <span class="circle">
+                        <span class="icon arrow"></span>
+                    </span>
+                    <span class="button-text">CLOSE</span>
+                </button>
+            </div>
+        </div>
+        <div class="modal-wrapper modal_07">
+            <div class="modal-contents">
+                <div class="modal-inner">
+                    <div>
+                        <img src="../images/works_lp_regimag.png" alt="サムネイル画像" class="thumb" loading="lazy">
+                    </div>
+                    <div>
+                        <span class="label">ランディングページ</span>
+                        <h3><span>クラウドファンディングプラットフォーム</span>｢MEDIA(メディア)｣ 紹介ページ</h3>
+                        <p><a href="https://regimag.jp/navigation/media/" target="_blank">https://regimag.jp/navigation/media/</a><i class="fa-solid fa-arrow-up-right-from-square"></i></p>
+                        <p class="text-justify">月額定額制で支援を募り、リターンとして一般には公開されていない動画や楽曲などをプランに合わせて提供することができます。</p>
+                        <div class="text-justify point">
+                            <span><i class="fa-solid fa-check"></i>POINT</span>
+                            <p>シンボルカラーの青色を基調にデザインしています。</p>
+                        </div>
+                        <span class="label">ワイヤーフレーム</span><span class="label">デザイン</span><span class="label">コーディング</span>
+                    </div>
+                </div>
+                <div class="screenshot">
+                    <span class="heading-sideline">SCREENSHOT</span>
+                    <img src="../images/cap_lp_regimag_pc.png" alt="ランディングページ画面（PC）" class="pc" loading="lazy">
+                    <img src="../images/cap_lp_regimag_sp.png" alt="ランディングページ画面（スマホ）" class="sp" loading="lazy">
+                </div>
+                <button class="modal-close-button modal-button">
+                    <span class="circle">
+                        <span class="icon arrow"></span>
+                    </span>
+                    <span class="button-text">CLOSE</span>
+                </button>
+            </div>
+        </div>
+        <div class="modal-wrapper modal_02">
+            <div class="modal-contents">
+                <div class="modal-inner">
+                    <div>
+                        <img src="../images/works_prepon.png" alt="PREPONサムネイル画像" class="thumb" loading="lazy">
+                        <div class="logo">
+                            <span class="heading-sideline">LOGO</span>
+                            <img src="../images/logo_prepon.png" width="155" height="65" alt="ロゴ" loading="lazy">
+                        </div>
+                    </div>
+                    <div>
+                        <span class="label">WEBサイト</span><span class="label">2010年リリース</span>
+                        <h3><span>高割引額プレミアムクーポンサイト</span>PREPON</h3>
+                        <p><span class="line-through">https://prepon.jp/</span><span>※現在､サービスは終了しています</span></p>
+                        <p class="text-justify">｢本日のみ｣｢○名様限定｣といったプレミアム感を演出するフラッシュマーケティングの仕組みを活用したクーポン共同購入サイトです。サービスやブランドのイメージを損なうことなく、通常では提供できないプレミアムなプランを用意でき、クーポン情報を掲載するお店にとって、新規顧客の獲得や短期間での大量集客が見込めると好評でした。</p>
+                        <div class="text-justify point">
+                            <span><i class="fa-solid fa-check"></i>POINT</span>
+                            <p>ロゴはチケットをイメージした矩形とラインで表現し、文字は高級感を意識して細めのウエイトで文字間を広めにとりました。ヘッダーもダークグレーで高級感、プレミアム感を印象づけ、割引のラベルや金額、CTAボタンには購買意欲を高める暖色系にしました。コンテンツ部分は商品の写真が映えるようにオフホワイトを採用しています。</p>
+                        </div>
+                        <span class="label">情報設計</span><span class="label">ワイヤーフレーム</span><span class="label">デザイン</span><span class="label">コーディング</span><span class="label">ロゴ</span><span class="label">写真補正</span>
+                    </div>
+                </div>
+                <div class="screenshot">
+                    <span class="heading-sideline">SCREENSHOT</span>
+                    <img src="../images/cap_prepon_top_pc.png" alt="TOP画面（PC）" class="pc" loading="lazy">
+                    <img src="../images/cap_prepon_top_sp.png" alt="TOP画面（スマホ）" class="sp" loading="lazy">
+                    <img src="../images/cap_prepon_top_mb.png" alt="TOP画面（フィーチャーフォン）" class="mb" loading="lazy">
+                </div>
+                <button class="modal-close-button modal-button">
+                    <span class="circle">
+                        <span class="icon arrow"></span>
+                    </span>
+                    <span class="button-text">CLOSE</span>
+                </button>
+            </div>
+        </div>
+        <div class="modal-wrapper modal_14">
+            <div class="modal-contents">
+                <div class="modal-inner">
+                    <div>
+                        <img src="../images/works_lp_prepon.png" alt="サムネイル画像" class="thumb" loading="lazy">
+                    </div>
+                    <div>
+                        <span class="label">ランディングページ</span>
+                        <h3><span>厳選宿の限定プランをお得なプライスで！</span>PREPON × テレビ東京｢厳選いい宿｣<br>タイアップ企画</h3>
+                        <p><span class="line-through">https://prepon.jp/</span><span>※現在､サービスは終了しています</span></p>
+                        <p class="text-justify">テレビ東京で放送されていた宿泊施設の通販番組｢厳選いい宿｣で、PREPONを利用してお得に宿泊できるクーポンを紹介していただきました。</p>
+                        <div class="text-justify point">
+                            <span><i class="fa-solid fa-check"></i>POINT</span>
+                            <p>厳選いい宿公式サイトのデザインに寄せたあしらいや色味でプレミアム感を演出しました。</p>
+                        </div>
+                        <span class="label">ワイヤーフレーム</span><span class="label">デザイン</span><span class="label">コーディング</span>
+                    </div>
+                </div>
+                <div class="screenshot">
+                    <span class="heading-sideline">SCREENSHOT</span>
+                    <img src="../images/cap_lp_prepon_1.png" alt="ランディングページ画面" class="pc" loading="lazy">
+                    <img src="../images/cap_lp_prepon_2.png" alt="ランディングページ画面" class="pc" loading="lazy">
+                </div>
+                <button class="modal-close-button modal-button">
+                    <span class="circle">
+                        <span class="icon arrow"></span>
+                    </span>
+                    <span class="button-text">CLOSE</span>
+                </button>
+            </div>
+        </div>
+        <div class="modal-wrapper modal_03">
+            <div class="modal-contents">
+                <div class="modal-inner">
+                    <div>
+                        <img src="../images/works_tipoca.png" alt="サムネイル画像" class="thumb" loading="lazy">
+                        <div class="logo">
+                            <span class="heading-sideline">LOGO</span>
+                            <img src="../images/logo_tipoca_1.png" width="100" height="100" alt="ロゴ" loading="lazy">
+                            <img src="../images/logo_tipoca_2.png" width="200" height="46" alt="ロゴ" loading="lazy">
+                        </div>
+                    </div>
+                    <div>
+                        <span class="label">WEBサイト</span><span class="label">2008年リリース</span>
+                        <h3><span>無料で送れる年賀はがき</span>tipoca</h3>
+                        <p><span class="line-through">https://tipoca.jp/</span><span>※現在､サービスは終了しています</span></p>
+                        <p class="text-justify">圧着はがきにしたことで、広告主の情報を中面に掲載。ユーザーは宛名面と裏面の両面を自由に使え、切手付きなので無料で投函できます。各種メディアに取り上げていただき、目標としていた1000万枚を超えるお申込みをいただきました。</p>
+                        <div class="text-justify point">
+                            <span><i class="fa-solid fa-check"></i>POINT</span>
+                            <p>ロゴは正月にちなんで赤・白・金で配色し、サービスの肝である圧着はがきからイメージしました。サイト全体もはがきに模して印象強くしています。</p>
+                        </div>
+                        <span class="label">デザイン(イラスト以外)</span><span class="label">コーディング</span><span class="label">ロゴ</span>
+                    </div>
+                </div>
+                <div class="screenshot">
+                    <span class="heading-sideline">SAMPLE</span>
+                    <img src="../images/sample_tipoca_1.png" width="133" height="194" alt="はがきサンプル" loading="lazy">
+                    <img src="../images/sample_tipoca_2.png" width="250" height="194" alt="はがきサンプル" loading="lazy">
+                    <img src="../images/sample_tipoca_3.png" width="250" height="194" alt="はがきサンプル" loading="lazy">
+                </div>
+                <button class="modal-close-button modal-button">
+                    <span class="circle">
+                        <span class="icon arrow"></span>
+                    </span>
+                    <span class="button-text">CLOSE</span>
+                </button>
+            </div>
+        </div>
+        <div class="modal-wrapper modal_04">
+            <div class="modal-contents">
+                <div class="modal-inner">
+                    <div>
+                        <img src="../images/works_ashiato.png" alt="サムネイル画像" class="thumb" loading="lazy">
+                    </div>
+                    <div>
+                        <span class="label">WEBサイト</span><span class="label">2007年リリース</span>
+                        <h3><span>様々なブログで共通して使える足跡システム</span>あし＠</h3>
+                        <p><span class="line-through">http://www.ashia.to/</span><span>※現在､サービスは終了しています</span></p>
+                        <p class="text-justify">ブログパーツを設置してブログにアクセスした足跡を残します。リリース当時、同一サービス内で提供される足跡の仕組みは多数存在していましたが、他サービス間で足跡が残せる仕組みは業界で初の試みでした。友達申請機能やコメント機能などSNS的要素も盛り込んでいます。</p>
+                        <span class="label">コーディング</span>
+                    </div>
+                </div>
+                <div class="screenshot">
+                    <span class="heading-sideline">SCREENSHOT</span>
+                    <img src="../images/cap_ashiato.png" alt="画面サンプル" class="pc" loading="lazy">
+                </div>
+                <button class="modal-close-button modal-button">
+                    <span class="circle">
+                        <span class="icon arrow"></span>
+                    </span>
+                    <span class="button-text">CLOSE</span>
+                </button>
+            </div>
+        </div>
+        <div class="modal-wrapper modal_05">
+            <div class="modal-contents">
+                <div class="modal-inner">
+                    <div>
+                        <img src="../images/works_kbank.png" alt="サムネイル画像" class="thumb" loading="lazy">
+                    </div>
+                    <div>
+                        <span class="label">WEBサイト</span><span class="label">2008年リリース</span>
+                        <h3><span>仕事情報サイト</span>求人バンク</h3>
+                        <p><span class="line-through">http://www.kyujinbank.jp/</span><span>※現在､サービスは終了しています</span></p>
+                        <p class="text-justify">インターネットサイト上における公募メディアとしての求人情報と、専任のキャリアコンサルタントによる転職支援サポートのワンストップサービスです。</p>
+                        <span class="label">コーディング</span><span class="label">営業資料作成</span>
+                    </div>
+                </div>
+                <div class="screenshot">
+                    <span class="heading-sideline">SCREENSHOT</span>
+                    <img src="../images/cap_kbank.png" alt="TOP画面" class="pc" loading="lazy">
+                    <img src="../images/sample_kbank.png" width="300" height="904" alt="営業資料" loading="lazy" style="border:none;">
+                </div>
+                <button class="modal-close-button modal-button">
+                    <span class="circle">
+                        <span class="icon arrow"></span>
+                    </span>
+                    <span class="button-text">CLOSE</span>
+                </button>
+            </div>
+        </div>
+        <div class="modal-wrapper modal_06">
+            <div class="modal-contents">
+                <div class="modal-inner">
+                    <div>
+                        <img src="../images/works_corporate.png" alt="サムネイル画像" class="thumb" loading="lazy">
+                    </div>
+                    <div>
+                        <span class="label">WEBサイト</span><span class="label">2014年リニューアル</span>
+                        <h3><span>コーポレートサイトのリニューアル</span>メディアインデックス株式会社</h3>
+                        <p><a href="https://www.mediaindex.co.jp/" target="_blank">https://www.mediaindex.co.jp/</a><i class="fa-solid fa-arrow-up-right-from-square"></i></p>
+                        <p class="text-justify">メディアインデックス株式会社のコーポレートサイトです。</p>
+                        <div class="text-justify point">
+                            <span><i class="fa-solid fa-check"></i>POINT</span>
+                            <p>コーポレートカラーの青色を基調にデザインしています。</p>
+                        </div>
+                        <span class="label">ワイヤーフレーム</span><span class="label">デザイン</span><span class="label">コーディング</span>
+                    </div>
+                </div>
+                <div class="screenshot">
+                    <span class="heading-sideline">SCREENSHOT</span>
+                    <img src="../images/cap_corporate_new_pc.png" alt="TOP画面（PC）" class="pc" loading="lazy">
+                    <img src="../images/cap_corporate_new_sp.png" alt="TOP画面（スマホ）" class="sp" loading="lazy">
+                    <img src="../images/sample_corporate.png" width="250" alt="会社案内" loading="lazy" style="border:none;">
+                </div>
+                <button class="modal-close-button modal-button">
+                    <span class="circle">
+                        <span class="icon arrow"></span>
+                    </span>
+                    <span class="button-text">CLOSE</span>
+                </button>
+            </div>
+        </div>
+        <div class="modal-wrapper modal_08">
+            <div class="modal-contents">
+                <div class="modal-inner">
+                    <div>
+                        <img src="../images/works_mcoin.png" alt="サムネイル画像" class="thumb" loading="lazy">
+                    </div>
+                    <div>
+                        <span class="label">スマートフォンアプリ</span>
+                        <h3><span>コインを貯めて現金キャッシュバック</span>Mコイン</h3>
+                        <p><span class="line-through">http://www.mcoin.jp/</span><span>※現在､サービスは終了しています</span></p>
+                        <p class="text-justify">
+                            <img src="../images/icon_mcoin.png" width="80" height="80" align="left" alt="アプリアイコン" loading="lazy" style="margin-right:2em;">
+                            ゲームのインストールや商品の資料請求、ショッピングなどの案件をクリアすることでコインが貯まります。貯まったコインは現金に換金することができるお小遣い稼ぎアプリです。</p>
+                        <div class="text-justify point">
+                            <span><i class="fa-solid fa-check"></i>POINT</span>
+                            <p>2006年にフィーチャーフォンでサービスを開始。のちにスマートフォン用サイトを制作したものをアプリ化しました。</p>
+                        </div>
+                        <span class="label">ワイヤーフレーム</span><span class="label">デザイン</span><span class="label">コーディング</span>
+                    </div>
+                </div>
+                <div class="screenshot">
+                    <span class="heading-sideline">SCREENSHOT</span>
+                    <img src="../images/cap_mcoin_1.png" alt="アプリ紹介画面" class="sp" loading="lazy">
+                    <img src="../images/cap_mcoin_2.png" alt="アプリ紹介画面" class="sp" loading="lazy">
+                    <img src="../images/cap_mcoin_3.png" alt="アプリ紹介画面" class="sp" loading="lazy">
+                    <img src="../images/cap_mcoin_4.png" alt="アプリ紹介画面" width="500" loading="lazy" style="margin-top:3em;">
+                </div>
+                <button class="modal-close-button modal-button">
+                    <span class="circle">
+                        <span class="icon arrow"></span>
+                    </span>
+                    <span class="button-text">CLOSE</span>
+                </button>
+            </div>
+        </div>
+        <div class="modal-wrapper modal_09">
+            <div class="modal-contents">
+                <div class="modal-inner">
+                    <div>
+                        <img src="../images/works_sp_game.png" alt="サムネイル画像" class="thumb" loading="lazy">
+                    </div>
+                    <div>
+                        <span class="label">スマートフォンアプリ</span>
+                        <h3><span>ちょっとしたすきま時間に気軽に遊べる</span>カジュアルゲーム</h3>
+                        <p><span>※現在､ダウンロードはできません</span></p>
+                        <ul class="text-justify">
+                            <li>
+                                <img src="../images/icon_sp_game_2.png" alt="アプリアイコン" loading="lazy">
+                                <p>超ハマる！本格パズルゲーム<br>
+                                <em>HUNGRY BIRDS</em></p>
+                            </li>
+                            <li>
+                                <img src="../images/icon_sp_game_1.png" alt="アプリアイコン" loading="lazy">
+                                <p>爽快感抜群！横スクロールフライトアクション<br><em>FLYING DONKEY</em></p>
+                            </li>
+                            <li>
+                                <img src="../images/icon_sp_game_3.png" alt="アプリアイコン" loading="lazy">
+                                <p>タイミングよく子ブタを飛ばすタップゲーム<br>
+                                <em>Boo-Boo jump</em></p>
+                            </li>
+                            <li>
+                                <img src="../images/icon_sp_game_4.png" alt="アプリアイコン" loading="lazy">
+                                <p>懐かしのエアホッケーがそのままゲームに！<br>
+                                <em>GALAXY HOCKEY</em></p>
+                            </li>
+                        </ul>
+                        <span class="label">ワイヤーフレーム</span><span class="label">デザイン</span>
+                    </div>
+                </div>
+                <div class="screenshot">
+                    <span class="heading-sideline">SCREENSHOT</span>
+                    <img src="../images/cap_sp_game_1.png" alt="アプリ紹介画面" width="300" loading="lazy">
+                    <img src="../images/cap_sp_game_2.png" alt="アプリ紹介画面" width="500" loading="lazy" style="border:none;">
+                </div>
+                <button class="modal-close-button modal-button">
+                    <span class="circle">
+                        <span class="icon arrow"></span>
+                    </span>
+                    <span class="button-text">CLOSE</span>
+                </button>
+            </div>
+        </div>
+        <div class="modal-wrapper modal_11">
+            <div class="modal-contents">
+                <div class="modal-inner">
+                    <div>
+                        <img src="../images/works_prize.png" alt="サムネイル画像" class="thumb" loading="lazy">
+                    </div>
+                    <div>
+                        <span class="label">スマートフォン</span>
+                        <h3><span>ユーザー属性を絞ってメール配信</span>ターゲティングメール</h3>
+                        <p><span>※現在､サービスは終了しています</span></p>
+                        <ul class="text-justify">
+                            <li>
+                                <p>超ハマる！本格パズルゲーム<br>
+                                <em>HUNGRY BIRDS</em></p>
+                            </li>
+                            <li>
+                                <p>爽快感抜群！横スクロールフライトアクション<br><em>FLYING DONKEY</em></p>
+                            </li>
+                            <li>
+                                <p>タイミングよく子ブタを飛ばすタップゲーム<br>
+                                <em>Boo-Boo jump</em></p>
+                            </li>
+                            <li>
+                                <p>懐かしのエアホッケーがそのままゲームに！<br>
+                                <em>GALAXY HOCKEY</em></p>
+                            </li>
+                        </ul>
+                        <div class="text-justify point">
+                            <span><i class="fa-solid fa-check"></i>POINT</span>
+                            <p>2006年にフィーチャーフォンでサービスを開始。のちにスマートフォン用サイトを制作したものをアプリ化しました。</p>
+                        </div><span class="label">デザイン</span><span class="label">コーディング</span><span class="label">バナー</span>
+                    </div>
+                </div>
+                <div class="screenshot">
+                    <span class="heading-sideline">SCREENSHOT</span>
+                    <img src="../images/cap_prize_3.png" alt="画面サンプル" class="sp" loading="lazy">
+                    <img src="../images/cap_prize_4.png" alt="画面サンプル" class="sp" loading="lazy">
+                    <img src="../images/cap_prize_2.png" alt="画面サンプル" class="sp" loading="lazy"><br>
+                    <img src="../images/cap_prize_5.png" alt="画面サンプル" class="sp" loading="lazy" style="margin-top:3em;">
+                    <img src="../images/cap_prize_1.png" alt="画面サンプル" class="sp" loading="lazy" style="margin-top:3em;">
+                    <img src="../images/cap_prize_6.png" alt="画面サンプル" class="sp" loading="lazy" style="width:320px;margin-top:3em;border:none;">
+                </div>
+                <button class="modal-close-button modal-button">
+                    <span class="circle">
+                        <span class="icon arrow"></span>
+                    </span>
+                    <span class="button-text">CLOSE</span>
+                </button>
+            </div>
+        </div>
+        <div class="modal-wrapper modal_10">
+            <div class="modal-contents">
+                <div class="modal-inner">
+                    <div>
+                        <img src="../images/works_mb_game.png" alt="サムネイル画像" class="thumb" loading="lazy">
+                    </div>
+                    <div>
+                        <span class="label">フィーチャーフォン</span><span class="label">2011年リリース</span>
+                        <h3><span>ソーシャルゲームプラットフォーム｢GREE｣で配信</span>ロストエレメント 〜選ばれし魔導師たち〜</h3>
+                        <p><span class="line-through">http://www.lostelement.jp/</span><span>※現在､サービスは終了しています</span></p>
+                        <p class="text-justify">ゲームのインストールや商品の資料請求、ショッピングなどの案件をクリアすることでコインが貯まります。貯まったコインは現金に換金することができるお小遣い稼ぎアプリです。</p>
+                        <span class="label">ワイヤーフレーム</span><span class="label">デザイン</span><span class="label">コーディング</span>
+                    </div>
+                </div>
+                <div class="screenshot">
+                    <span class="heading-sideline">SCREENSHOT</span>
+                    <img src="../images/cap_mb_game_1.png" alt="ゲーム画面" class="mb" loading="lazy">
+                    <img src="../images/cap_mb_game_2.png" alt="ゲーム画面" class="mb" loading="lazy">
+                </div>
+                <button class="modal-close-button modal-button">
+                    <span class="circle">
+                        <span class="icon arrow"></span>
+                    </span>
+                    <span class="button-text">CLOSE</span>
+                </button>
+            </div>
+        </div>
+        <div class="modal-wrapper modal_12">
+            <div class="modal-contents">
+                <div class="modal-inner">
+                    <div class="banner">
+                        <span class="heading-sideline" style="margin-top:3em;">SAMPLE</span>
+                        <img src="../images/banner_4.jpg" alt="バナー画像">
+                        <img src="../images/banner_5.jpg" alt="バナー画像"><br>
+                        <img src="../images/banner_2.png" alt="バナー画像">
+                        <img src="../images/banner_3.png" alt="バナー画像"><br>
+                        <img src="../images/banner_1.jpg" alt="バナー画像">
+                    </div>
+                    <div>
+                        <span class="label">バナー</span>
+                        <h3><span>主にレジまぐのTOP画面と競馬カテゴリで掲載</span>バナー制作</h3>
+                        <p class="text-justify">レジまぐのTOP画面や中央競馬のレジまぐのTOP画面、地方競馬のレジまぐのTOP画面にそれぞれ表示しています。これまでに1,000枚以上のバナーを作成しました。</p>
+                        <div class="text-justify point">
+                            <span><i class="fa-solid fa-check"></i>POINT</span>
+                            <p>コンテンツのイメージに沿ったクリエティブで、何をいちばんに伝えたいのか、強調すべきなのかを意識しています。</p>
+                        </div>
+                        <span class="label">ワイヤーフレーム</span><span class="label">デザイン</span>
+                    </div>
+                </div>
+                <button class="modal-close-button modal-button">
+                    <span class="circle">
+                        <span class="icon arrow"></span>
+                    </span>
+                    <span class="button-text">CLOSE</span>
+                </button>
+            </div>
+        </div>
+        <div class="modal-wrapper modal_13">
+            <div class="modal-contents">
+                <div class="modal-inner">
+                    <div class="banner">
+                        <span class="heading-sideline" style="margin-top:3em;">SAMPLE</span>
+                        <img src="../images/tshirt_1.png" alt="Tシャツ画像">
+                        <img src="../images/tshirt_2.png" alt="Tシャツ画像"><br>
+                        <img src="../images/tshirt_3.png" alt="Tシャツ画像">
+                        <img src="../images/tshirt_4.png" alt="Tシャツ画像">
+                    </div>
+                    <div>
+                        <span class="label">Tシャツデザイン</span>
+                        <h3><span>主にレジまぐのTOP画面と競馬カテゴリで掲載</span>Tシャツのデザイン</h3>
+                        <p class="text-justify">レジまぐのTOP画面や中央競馬のレジまぐのTOP画面、地方競馬のレジまぐのTOP画面にそれぞれ表示しています。これまでにのべ1,000枚以上のバナーを作成しました。</p>
+                        <div class="text-justify point">
+                            <span><i class="fa-solid fa-check"></i>POINT</span>
+                            <p>コンテンツのイメージに沿ったクリエティブで、何をいちばんに伝えたいのか、強調すべきなのかを意識しています。</p>
+                        </div>
+                        <span class="label">デザイン</span>
+                    </div>
+                </div>
+                <button class="modal-close-button modal-button">
+                    <span class="circle">
+                        <span class="icon arrow"></span>
+                    </span>
+                    <span class="button-text">CLOSE</span>
+                </button>
+            </div>
+        </div>
+        <div class="close-button-wrapper">
+            <button class="modal-close-button">CLOSE</button>
+        </div>
+        <div class="modal"></div>
+    </section>
+    </main>
+    <div class="progress-wrap">
+        <svg class="progress-circle" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98">
+        </svg>
     </div>
-  </div>
-  <div class="message-wrapper">
-    <div class="container">
-      <div class="heading">
-        <h2>さぁ、あなたもProgateでプログラミングを学んでみませんか?</h2>
-        <h3>Let's learn to code, learn to be creative!</h3>
-      </div>
-      <span class="btn message">さっそく開発する</span>
-    </div>
-  </div>
-  <footer>
-    <div class="container">
-      <img src="https://prog-8.com/images/html/advanced/footer_logo.png">
-      <p>Learn to Code, Learn to be Creative.</p>
-    </div>
-  </footer>
+    <footer>
+        <div class="footer-inner">
+            <p><span class="heading">PORTFOLIO</span><span class="name">by DAIGO AMANO</span></p>
+            <div class="nav">
+                <a href="#about">ABOUT</a></li>
+                <a href="#works">WORKS</a></li>
+            </div>
+        </div>
+        <small><span>&copy;</span> 2024 DAIGO AMANO</small>
+    </footer>
+</div>
 </body>
 </html>
