@@ -32,6 +32,7 @@ body {
 }
 a:not(.button) { text-decoration: none; }
 a:not(.button):hover { text-decoration: underline; }
+p + p { margin-top: 1em !important; }
 .profile p, .tool p, .text-justify { margin: 0; text-align: justify; }
 .point {
     position: relative;
@@ -222,6 +223,7 @@ footer .nav a::before { background-color: #808080; }
     transition: .2s .2s, scale 0s .4s;
 }
 #about { width: 80%; margin: 150px auto 0; padding-top: 130px; }
+.about { width: 80%; margin: 0 auto; }
 .profile, .tool {
     position: relative;
     display: flex;
