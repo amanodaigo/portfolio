@@ -4,25 +4,21 @@ $(window).on('load', function(){
         $('.loading').addClass('loaded');
         $('header').addClass('show');
         $('.header-inner').addClass('anim');
-    }, 4000);
-    // }, 1000);
+    }, 3000);
     setTimeout(function(){
         $('.loading').hide();
         $('.header-inner').removeClass('anim');
-    }, 8000);
-    // }, 2000);
+    }, 7000);
     setTimeout(function(){
         $('#about > h2').addClass('inview');
-    }, 6000);
-    // }, 2000);
+    }, 5000);
     setTimeout(function(){
         $('.profile > div').each(function(i){
             $(this).delay(200 * i).queue(function(){
                 $(this).addClass('inview').dequeue();
             });
         });
-    }, 6200);
-    // }, 2200);
+    }, 5200);
 
     $('.typing').each(function(){
         var text = $(this).html();
@@ -59,19 +55,19 @@ $(document).ready(function(){
     $(window).on('scroll', function(){
         var ua = navigator.userAgent;
         if((ua.indexOf('iPhone') > 0 || ua.indexOf('Android') > 0) && ua.indexOf('Mobile') > 0){
-            var scroll = 1800;
+            var scroll = 2500;
         }else{
             if($(this).scrollTop() > 80){
                 $('header').addClass('fixed');
             }else{
                 $('header').removeClass('fixed');
             }
-            if($(this).scrollTop() > 6850){
+            if($(this).scrollTop() > 7500){
                 $('header').addClass('hide');
             }else{
                 $('header').removeClass('hide');
             }
-            var scroll = 1200;
+            var scroll = 1700;
         }
         if($(this).scrollTop() > scroll){
             $('.disp-scroll').addClass('hide');
@@ -80,7 +76,7 @@ $(document).ready(function(){
         }
 
         // Display Animation
-        $('h2, .tool p, .tool img, .works-wrapper > div').each(function(i){
+        $('h2, .strength p, .strength img, .works-wrapper > div, .thanks').each(function(i){
             var pos = $(this).offset().top;
             var scroll = $(window).scrollTop();
             var height = $(window).height();
