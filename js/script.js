@@ -62,7 +62,7 @@ $(document).ready(function(){
             }else{
                 $('header').removeClass('fixed');
             }
-            if($(this).scrollTop() > 7500){
+            if($(this).scrollTop() > 7300){
                 $('header').addClass('hide');
             }else{
                 $('header').removeClass('hide');
