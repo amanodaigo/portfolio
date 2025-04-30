@@ -281,6 +281,8 @@ footer .nav a::before { background-color: #808080; }
     margin-right: 20px;
 }
 .coding img:last-child { width: 45px; height: 45px; margin-left: 20px; }
+.design p + p,
+.coding p + p { font-size: .8rem; }
 .skill-icon { margin-top: 2em; }
 .works {
     --sticky-container-height: 100%;
@@ -546,8 +548,8 @@ footer .nav a::before { background-color: #808080; }
 }
 .modal-contents h3 + p:not(.url) { margin-top: 2em; }
 .modal-contents img.thumb,
-.modal-inner > div:first-child { width: 500px; }
-.modal-inner > div:last-child { width: calc(100% - 500px - 3em); margin: 1em 0 0 3em; }
+.modal-inner > div:first-child { width: 450px; }
+.modal-inner > div:last-child { width: calc(100% - 450px - 3em); margin: 1em 0 0 3em; }
 .modal-contents .url { margin-bottom: 2em; }
 .modal-contents a { color: var(--color-primary); font-size: .8rem; text-decoration: underline; }
 .modal-contents a:hover { text-decoration: none; }
